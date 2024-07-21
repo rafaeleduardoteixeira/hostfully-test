@@ -4,7 +4,7 @@
 
 ### To run app:
 
-### `npm start`
+### `npm run start`
 
 ### To run test:
 
