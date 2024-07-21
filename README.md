@@ -21,4 +21,6 @@
 
 ### Ensure code quality:
 
-- ESlint - The best lib to ensure the code quality, help the developer to keep syntax perfectely and
+- ESlint - The best lib to ensure the code quality, help the developer to keep syntax perfectly, help the developer to find issues and solve problems related of their code.
+
+- Prettier - The best lib to ensure how the code looks like. It helps the developer to define coomon style to the code.
