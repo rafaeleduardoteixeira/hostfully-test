@@ -11,13 +11,14 @@
 ### `npm run test`
 
 <br />
-<br />
 
-# Libs selecteds
+# Libs
 
 ### Test app:
 
 - Jest - It is the most used lib to test React libs nowadays. For me is a great lib to test component and snapshot tests, there are a lot of documentation on internet and it's the test lib indicated by React.
+
+<br />
 
 ### Ensure code quality:
 
