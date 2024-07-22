@@ -16,6 +16,10 @@
 
 ### `npm i`
 
+### To db mock server:
+
+### `npx json-server db.json`
+
 ### To run app:
 
 ### `npm run start`
@@ -39,3 +43,11 @@
 - ESlint - The best lib to ensure the code quality, help the developer to keep syntax perfectly, help the developer to find issues and solve problems related of their code.
 
 - Prettier - The best lib to ensure how the code looks like. It helps the developer to define coomon style to the code.
+
+### Styling:
+
+- Styled components: I selected the styled components to styling my test it's for me a good lib to make it, and what I'm more familiar with. It allows me to easily styling by state.
+
+### Mock data
+
+- Json server: It's a lib only to mock the data.
