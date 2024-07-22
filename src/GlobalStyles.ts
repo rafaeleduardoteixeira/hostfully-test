@@ -73,13 +73,4 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const customMediaQuery = (maxWidth: number) => `@media (max-width: ${maxWidth}px)`;
-
-export const media = {
-  desktop: customMediaQuery(1920),
-  notebook: customMediaQuery(1440),
-  tablet: customMediaQuery(1024),
-  mobile: customMediaQuery(576),
-};
-
 export default GlobalStyle;
