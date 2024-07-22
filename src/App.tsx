@@ -1,12 +1,12 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import createdRoutes from './constants/router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>React app start</p>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={createdRoutes} />
+    </>
   );
 }
 
