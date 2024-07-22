@@ -1,4 +1,18 @@
-# Getting Started
+# Hostfylly Test
+
+<details>
+  <summary>Menu</summary>
+
+- [Getting Started](#getting-started)
+- [Selected Libs](#selected-libs)
+</details>
+
+---
+
+<br />
+<br />
+
+## Getting Started
 
 ### `npm i`
 
@@ -12,7 +26,7 @@
 
 <br />
 
-# Libs
+## Selected Libs
 
 ### Test app:
 
