@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
-import PropertyList from '../pages/PropertyList';
+import Home from '../pages/Home/Home';
 
 const createdRoutes = createBrowserRouter([
   {
     path: '/',
-    element: <PropertyList />,
+    element: <Home />,
   },
 ]);
 

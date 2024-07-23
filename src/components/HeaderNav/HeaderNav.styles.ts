@@ -10,8 +10,9 @@ export const Container = styled.div`
   padding: 0 15px;
   cursor: pointer;
   height: 45px;
-
   transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
+
+  position: relative;
 
   &:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
