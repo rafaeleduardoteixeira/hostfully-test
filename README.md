@@ -5,6 +5,7 @@
 
 - [Getting Started](#getting-started)
 - [Selected Libs](#selected-libs)
+- [Architecture Decisions](#architecture-decisions)
 </details>
 
 ---
@@ -40,7 +41,7 @@
 
 ### Ensure code quality:
 
-- ESlint - The best lib to ensure the code quality, help the developer to keep syntax perfectly, help the developer to find issues and solve problems related of their code.
+- ESlint - The best lib to ensure the code quality, help the developer to keep syntax perfectly, help the developer to find issues and solve problems related of their code;
 
 - Prettier - The best lib to ensure how the code looks like. It helps the developer to define coomon style to the code.
 
@@ -48,6 +49,11 @@
 
 - Styled components: I selected the styled components to styling my test it's for me a good lib to make it, and what I'm more familiar with. It allows me to easily styling by state.
 
-### Mock data
+<br />
 
-- Json server: It's a lib only to mock the data.
+### Architecture Decisions
+
+- I created separate folders for components, interfaces, constants, and page, for me, it is a clearly way to maintain.
+- I created constants to emulate a backend data;
+- I created a global state to manage that mocks without backend. I choose Context API because it's enough for this project. It doesn't have a lot of complexity to create a complex state control;
+- I created a mock imagens to render on the app.
