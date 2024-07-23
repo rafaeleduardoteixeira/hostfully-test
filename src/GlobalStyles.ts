@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   button,
   textarea,
   select {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Ubuntu' , sans-serif;
   }
 
   a {
