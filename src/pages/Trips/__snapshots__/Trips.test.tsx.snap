@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trips Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu fcOcYJ"
+    data-testid="Trips"
+  >
+    <img
+      class="sc-fQpRED gUMSQP"
+      data-testid="TripReturnHome"
+      src="/icons/returnArrow.svg"
+    />
+    <h1
+      class="sc-gJhJTp khCjDw"
+    >
+      Trips
+    </h1>
+    <div
+      class="sc-elDIKY jOlUnv"
+    >
+      <div
+        class="sc-dsLQwm eGkpVM"
+        data-testid="PropertyCard"
+      >
+        <img
+          alt="Name 1"
+          class="sc-iKTcqh kpXgWH"
+          src="image"
+        />
+        <div
+          class="sc-gnpbhQ kBQWpX"
+        >
+          <p
+            class="sc-la-DxNn hVkmwp"
+          >
+            Name 1
+          </p>
+          <h3
+            class="sc-iCZwEW dRsXDN"
+          >
+            Property 1
+          </h3>
+          <p
+            class="sc-knesRu EoGBD"
+          >
+            Jul 24, 2024 - Jul 24, 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

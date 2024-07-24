@@ -36,8 +36,8 @@ export const Trips = () => {
   };
 
   return (
-    <Container>
-      <TripsReturn src="/icons/returnArrow.svg" onClick={handleReturn} />
+    <Container data-testid="Trips">
+      <TripsReturn src="/icons/returnArrow.svg" onClick={handleReturn} data-testid="TripReturnHome" />
       <TripsTitle>Trips</TripsTitle>
       <TripsCardContainer>
         {getRentedProperties().map((rentedProperty) => (
@@ -46,9 +46,9 @@ export const Trips = () => {
             card={{
               id: rentedProperty.id,
               title: rentedProperty.name,
-              subTitle: rentedProperty.propertyName || '',
+              subTitle: rentedProperty.propertyName as string,
               description: `${moment(rentedProperty.checkIn, 'America/Los_Angeles').format('ll')} - ${moment(rentedProperty.checkOut, 'America/Los_Angeles').format('ll')}`,
-              images: rentedProperty?.propertyImages || [],
+              images: rentedProperty?.propertyImages as string[],
             }}
             onClick={() => handleTripPropertyClick(rentedProperty)}
           />
