@@ -11,6 +11,7 @@ exports[`PropertyCardSkeleton Snapshot test 1`] = `
     >
       <div
         class="sc-fQpRED eKGiQ"
+        data-testid="Skeleton"
       />
     </div>
     <div
@@ -18,13 +19,16 @@ exports[`PropertyCardSkeleton Snapshot test 1`] = `
     >
       <div
         class="sc-fQpRED eKGiQ"
+        data-testid="Skeleton"
       />
       <div
         class="sc-fQpRED leCQl"
+        data-testid="Skeleton"
         width="80%"
       />
       <div
         class="sc-fQpRED gBrIUN"
+        data-testid="Skeleton"
         width="40%"
       />
     </div>

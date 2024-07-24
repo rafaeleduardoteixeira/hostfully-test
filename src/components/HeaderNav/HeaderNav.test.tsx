@@ -17,7 +17,7 @@ describe('HeaderNav', () => {
   });
   test('Should render HeaderNav', () => {
     render(<HeaderNav />);
-    const HeaderNavElement = screen.getByTestId('HeaderNav');
+    const HeaderNavElement = screen.getByTestId('HeaderNavMenuClick');
     expect(HeaderNavElement).toBeInTheDocument();
   });
   test('Should click on HeaderNav and open DropDownMenu', () => {
