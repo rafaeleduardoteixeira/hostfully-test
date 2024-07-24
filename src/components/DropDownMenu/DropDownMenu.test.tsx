@@ -15,6 +15,11 @@ describe('DropDownMenu', () => {
     const { asFragment } = render(<DropDownMenu />);
     expect(asFragment()).toMatchSnapshot();
   });
+  test('Should render DropDownMenu', () => {
+    render(<DropDownMenu />);
+    const DropDownMenuElement = screen.getByTestId('DropDownMenu');
+    expect(DropDownMenuElement).toBeInTheDocument();
+  });
   test('Click on Trips menu option', () => {
     render(<DropDownMenu />);
     const linkElement = screen.getByText(/Trips/i);
