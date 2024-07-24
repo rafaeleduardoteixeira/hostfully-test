@@ -8,5 +8,5 @@ interface SkeletonProps {
 }
 
 export const Skeleton = (props: SkeletonProps) => {
-  return <Container {...props} />;
+  return <Container data-testid="Skeleton" {...props} />;
 };
