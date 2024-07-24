@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyList  Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu fuUgyo"
+    data-testid="PropertyList"
+  >
+    <h1
+      class="sc-gJhJTp dOtqgx"
+    >
+      Properties For Rent
+    </h1>
+    <div
+      class="sc-elDIKY ktHpUm"
+    />
+    <div
+      class="sc-fQpRED guSMlV"
+    >
+      <div
+        class="sc-iCZwEW cIkXSN"
+        data-testid="PropertyCard"
+      >
+        <img
+          alt="City 1, Country 1"
+          class="sc-knesRu dSuBXv"
+          src="image1"
+        />
+        <div
+          class="sc-dnaUSb nKZde"
+        >
+          <p
+            class="sc-kkmypM gUkkno"
+          >
+            City 1, Country 1
+          </p>
+          <h3
+            class="sc-dkjaqt jcLtgh"
+          >
+            Property 1
+          </h3>
+          <p
+            class="sc-jCbFiK colLGs"
+          >
+            $100
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

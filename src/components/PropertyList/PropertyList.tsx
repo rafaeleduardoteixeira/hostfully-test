@@ -20,7 +20,7 @@ export const PropertyList = ({ isLoading, properties }: PropertyListProps): JSX.
   };
 
   return (
-    <Container>
+    <Container data-testid="PropertyList">
       <PropertyListTitle>Properties For Rent</PropertyListTitle>
       <Delimiter />
       <PropertyCardContainer>
