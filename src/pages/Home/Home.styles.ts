@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../themes';
+import { colors, media } from '../../themes';
 
 export const Container = styled.div`
   display: flex;
@@ -43,14 +43,56 @@ export const ImgBanner = styled.div`
 
 export const SearchContainer = styled.div`
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   width: 50%;
-  height: 60px;
+  height: 80px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 
-  @media ${media.mobile} {
-    width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  @media ${media.tablet} {
+    width: 70%;
   }
+
+  @media ${media.mobile} {
+    height: 60px;
+    width: 90%;
+    padding: 0 10px;
+    bottom: -30px;
+  }
+`;
+
+export const SearchButton = styled.button`
+  height: 45px;
+  width: 45px;
+  background-color: ${colors.hostfullyPrimaryColor};
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  margin-left: 20px;
+
+  @media ${media.mobile} {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    background-color: ${colors.hostfullySecondaryColor};
+    transition: 0.3s;
+  }
+`;
+
+export const SearchIcon = styled.img`
+  width: 22px;
+  height: 22px;
 `;
