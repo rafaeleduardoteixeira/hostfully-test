@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from '../components/Layout/Layout';
-import { PropertyDetail } from '../components/PropertyDetail/PropertyDetail';
+import { PropertyDetail } from '../pages/PropertyDetail/PropertyDetail';
 import { Home } from '../pages/Home/Home';
 import { Trips } from '../pages/Trips/Trips';
 
