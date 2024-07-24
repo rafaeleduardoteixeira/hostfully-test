@@ -42,7 +42,7 @@ export const TripDetail = ({ handleEditTrip, handleDeleteTrip, handleCancel, ren
   };
 
   const handleChange = (value: Date[] | null) => {
-    if (value && value[0] && value[1]) {
+    if (value) {
       if (handleCheckRentedDates(value[0], value[1])) {
         setCheckIn(null);
         setCheckOut(null);
