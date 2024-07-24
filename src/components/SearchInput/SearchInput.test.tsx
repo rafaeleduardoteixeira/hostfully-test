@@ -24,9 +24,9 @@ describe('SearchInput', () => {
   test('Should call onChange when input value changes', () => {
     const onChange = jest.fn();
     render(<SearchInput onChange={onChange} />);
-    const InputSearchElemen = screen.getByPlaceholderText('Enter a property name or city');
+    const InputSearchElement = screen.getByPlaceholderText('Enter a property name or city');
     act(() => {
-      fireEvent.change(InputSearchElemen, { target: { value: 'test' } });
+      fireEvent.change(InputSearchElement, { target: { value: 'test' } });
     });
     expect(onChange).toBeCalled();
   });
