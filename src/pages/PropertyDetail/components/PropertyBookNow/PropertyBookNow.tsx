@@ -128,7 +128,7 @@ export const PropertyBookNow = ({ property }: PropertyBookNowProps) => {
   };
 
   return (
-    <PropertyBookNowContainer>
+    <PropertyBookNowContainer data-testid="PropertyBookNow">
       <PropertyBookNowPrice>${property.price}</PropertyBookNowPrice>
       <PropertyBookNowFields>
         {isLoading ? (

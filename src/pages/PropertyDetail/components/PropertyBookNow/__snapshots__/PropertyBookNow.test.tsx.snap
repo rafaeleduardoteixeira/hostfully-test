@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyBookNow Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu gEhGNz"
+    data-testid="PropertyBookNow"
+  >
+    <div
+      class="sc-gJhJTp gZBfkf"
+    >
+      $1
+    </div>
+    <div
+      class="sc-fQpRED cNieMC"
+    >
+      <div
+        class="sc-la-DxNn jVoYNI"
+      >
+        <input
+          class="sc-knesRu kNBFpF"
+          data-testid="Input"
+          error=""
+          name="name"
+          placeholder="Name"
+          type="text"
+          width="300px"
+        />
+      </div>
+      <div
+        class="sc-la-DxNn jVoYNI"
+      >
+        <input
+          class="sc-knesRu kNBFpF"
+          data-testid="Input"
+          error=""
+          name="email"
+          placeholder="Email"
+          type="email"
+          width="300px"
+        />
+      </div>
+      <div
+        class="sc-kkmypM gUXkBX"
+        error=""
+      >
+        <div
+          class="react-datepicker-wrapper"
+        >
+          <div
+            class="react-datepicker__input-container react-datepicker__view-calendar-icon"
+          >
+            <img
+              alt="calendar"
+              class=" react-datepicker__calendar-icon "
+              src="/icons/calendar.svg"
+            />
+            <input
+              class="date-picker"
+              placeholder="Select a date to book"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="sc-elDIKY hgUBA-D"
+    >
+      Book now
+    </button>
+  </div>
+</DocumentFragment>
+`;
