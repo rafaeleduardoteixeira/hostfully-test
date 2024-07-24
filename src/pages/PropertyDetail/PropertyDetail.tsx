@@ -38,18 +38,20 @@ export const PropertyDetail = () => {
   };
 
   return (
-    <Container>
+    <Container data-testid="PropertyDetail">
       {property && (
         <>
           <PropertyReturn src="/icons/returnArrow.svg" onClick={handleReturn} />
           <PropertyImageContainer>
             <PropertyImageBanner src={property?.images[0]} onClick={handleShowAllImages} />
             <PropertyNameBanner>{property.name}</PropertyNameBanner>
-            <PropertyImageButtonBanner onClick={handleShowAllImages}>See all photos</PropertyImageButtonBanner>
+            <PropertyImageButtonBanner onClick={handleShowAllImages} data-testid="ShowAllImages">
+              See all photos
+            </PropertyImageButtonBanner>
           </PropertyImageContainer>
 
           <PropertyTopContent>
-            <PropertyMap property={property} />
+            {property.position.longitude && property.position.latitude && <PropertyMap property={property} />}
             <PropertyBookNow property={property} />
           </PropertyTopContent>
           <PropertyDescription property={property} />
