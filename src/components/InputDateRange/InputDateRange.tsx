@@ -1,3 +1,4 @@
+import React from 'react';
 import moment from 'moment';
 import { Container } from './InputDateRange.styles';
 
@@ -19,7 +20,7 @@ interface InputDateRangeProps {
 export const InputDateRange = ({ bookedDates, dateStart, dateEnd, error, onChange }: InputDateRangeProps) => {
   const excludeDateIntervals = bookedDates?.map((bookedDate) => {
     return {
-      start: moment(bookedDate.start, 'America/Los_Angeles').subtract(1, 'days').toDate(),
+      start: moment(bookedDate.start, 'America/Los_Angeles').toDate(),
       end: moment(bookedDate.end, 'America/Los_Angeles').toDate(),
     };
   }) as { start: Date; end: Date }[];

@@ -1,12 +1,11 @@
 // Created a component called PropertyList that takes in isLoading and properties as props.
 // It's the property list container that will display all the properties from props.
-
-import { useEffect, useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container, Delimiter, PropertyListTitle, PropertyCardContainer } from './PropertyList.styles';
 import { Property } from '../../interfaces/property';
 import { PropertyCardSkeleton } from '../PropertyCardSkeleton/PropertyCardSkeleton';
 import { PropertyCard } from '../PropertyCard/PropertyCard';
-import { useNavigate } from 'react-router-dom';
 
 interface PropertyListProps {
   isLoading: boolean;

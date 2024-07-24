@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AppContext, AppContextType } from '../../Context/App.context';
 import { Container, TripsCardContainer, TripsReturn, TripsTitle } from './Trips.styles';
 import { PropertyCard } from '../../components/PropertyCard/PropertyCard';
@@ -10,6 +11,7 @@ import { TripDetail } from './components/TripDetail/TripDetail';
 export const Trips = () => {
   const { getRentedProperties, handleRemoveRentals, handleEditRentals } = useContext(AppContext) as AppContextType;
   const [clickedTrip, setClickedTrip] = useState<RentedProperties | null>(null);
+  const navigate = useNavigate();
 
   const handleTripPropertyClick = (rentedProperty: RentedProperties) => {
     setClickedTrip(rentedProperty);
@@ -30,7 +32,7 @@ export const Trips = () => {
   };
 
   const handleReturn = () => {
-    window.history.back();
+    navigate('/');
   };
 
   return (

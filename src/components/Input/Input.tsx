@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import { Container, InputLabel, InputField } from './Input.styles';
 
 interface InputProps {

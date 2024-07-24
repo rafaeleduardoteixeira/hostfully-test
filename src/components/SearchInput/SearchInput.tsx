@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, SearchInputField } from './SearchInput.styles';
 
 interface SearchInputProps {

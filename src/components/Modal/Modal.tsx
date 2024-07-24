@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { CloseButton, Container, ModalContent } from './Modal.styles';
 
 interface ModalProps {

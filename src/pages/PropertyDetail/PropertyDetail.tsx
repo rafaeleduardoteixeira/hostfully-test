@@ -1,5 +1,5 @@
-import { useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { AppContext, AppContextType } from '../../Context/App.context';
 import {
   Container,
@@ -12,7 +12,7 @@ import {
   PropertyTopContent,
   PropertyReturn,
 } from './PropertyDetail.styles';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../../components/Modal/Modal';
 import { PropertyBookNow } from './components/PropertyBookNow/PropertyBookNow';
 import { PropertyMap } from './components/PropertyMap/PropertyMap';
 import { PropertyDescription } from './components/PropertyDescription/PropertyDescription';
@@ -21,6 +21,7 @@ export const PropertyDetail = () => {
   const { id } = useParams();
   const { getPropertyById } = useContext(AppContext) as AppContextType;
   const property = getPropertyById(id || '');
+  const navigate = useNavigate();
 
   const [showAllImages, setShowAllImages] = useState(false);
 
@@ -33,7 +34,7 @@ export const PropertyDetail = () => {
   };
 
   const handleReturn = () => {
-    window.history.back();
+    navigate('/');
   };
 
   return (

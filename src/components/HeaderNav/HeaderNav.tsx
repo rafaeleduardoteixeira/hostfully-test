@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container, HeaderNavAvatar, HeaderNavIcon } from './HeaderNav.styles';
 import { DropDownMenu } from '../DropDownMenu/DropDownMenu';
 

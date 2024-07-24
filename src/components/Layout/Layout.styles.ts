@@ -12,6 +12,7 @@ export const Container = styled.header`
 export const Logo = styled.img`
   width: 180px;
   height: auto;
+  cursor: pointer;
 
   @media ${media.tablet} {
     width: 220px;

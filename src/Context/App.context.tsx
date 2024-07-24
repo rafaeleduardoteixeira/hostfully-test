@@ -5,7 +5,6 @@ import React, { createContext, useCallback, useState } from 'react';
 import { Property } from '../interfaces/property';
 import { propertiesMock } from '../constants/mocks/properties';
 import { RentedProperties } from '../interfaces/rentedProperties';
-import moment from 'moment';
 
 interface IAppContext {
   children: React.ReactNode;
@@ -16,7 +15,10 @@ export type AppContextType = {
   getProperties: (searchTerm?: string) => Property[];
   getPropertyById: (propertyId: string) => Property | undefined;
   getRentedProperties: () => RentedProperties[];
-  getPropertyRentedDates: (propertyId: string) => { start: Date | null; end: Date | null }[] | undefined;
+  getPropertyRentedDates: (
+    propertyId: string,
+    rentedId?: string,
+  ) => { start: Date | null; end: Date | null }[] | undefined;
   handleAddRentals: (rentedProperty: RentedProperties) => Promise<boolean>;
   handleRemoveRentals: (rentalId: string) => void;
   handleEditRentals: (rentedProperty: RentedProperties) => void;
@@ -25,16 +27,7 @@ export type AppContextType = {
 export const AppContext = createContext<AppContextType | null>(null);
 
 const AppContextProvider = ({ children }: IAppContext) => {
-  const [rentedProperties, setRentedProperties] = useState<RentedProperties[]>([
-    {
-      id: '1',
-      propertyId: '43d8045c-62e5-4426-9f28-f1dde15b97c7',
-      checkIn: moment('2024-07-24', 'America/Los_Angeles').toDate(),
-      checkOut: moment('2024-07-26', 'America/Los_Angeles').toDate(),
-      name: 'Rafael Teixeira',
-      email: 'rafael@gmail.com',
-    },
-  ]);
+  const [rentedProperties, setRentedProperties] = useState<RentedProperties[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   // Created to emulate an API
@@ -75,10 +68,11 @@ const AppContextProvider = ({ children }: IAppContext) => {
 
   // Created to emulate an API to get dates of rented properties
   const getPropertyRentedDates = useCallback(
-    (propertyId: string) => {
+    (propertyId: string, rentedId?: string) => {
       return (
         rentedProperties
           .filter((rentedProperty) => rentedProperty.propertyId === propertyId)
+          .filter((rentedProperty) => rentedProperty.id !== rentedId)
           .map((rentedProperty) => {
             return {
               start: rentedProperty.checkIn || null,
@@ -94,7 +88,7 @@ const AppContextProvider = ({ children }: IAppContext) => {
   const handleAddRentals = useCallback((rentedProperty: RentedProperties) => {
     setIsLoading(true);
     return new Promise<boolean>((resolve) => {
-      setRentedProperties([...rentedProperties, rentedProperty]);
+      setRentedProperties((prevRentedProperties) => [...prevRentedProperties, rentedProperty]);
       setTimeout(() => {
         setIsLoading(false);
         resolve(true);

@@ -1,4 +1,5 @@
 // Created a component called PropertyCard. It was created in a generic way to be used in different places.
+import React from 'react';
 import {
   PropertyCardContainer,
   PropertyCardData,

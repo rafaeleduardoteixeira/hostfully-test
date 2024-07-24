@@ -21,7 +21,7 @@ export const TripDetail = ({ handleEditTrip, handleDeleteTrip, handleCancel, ren
   const [error, setError] = useState<string>('');
 
   const { getPropertyRentedDates } = useContext(AppContext) as AppContextType;
-  const rentedDates = getPropertyRentedDates(rentedProperty.propertyId);
+  const rentedDates = getPropertyRentedDates(rentedProperty.propertyId, rentedProperty.id);
 
   const handleCheckRentedDates = (checkIn: Date, checkOut: Date) => {
     // Create to prevent that user select a date that is already rented. For instance if the user select 23/07/2024 to 27/07/2024 and the property is already rented from 24/07/2024 to 26/07/2024, the user can't select this date. I set the checkIn date the value of checkOut date.
