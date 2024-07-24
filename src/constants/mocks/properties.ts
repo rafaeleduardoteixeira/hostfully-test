@@ -18,6 +18,7 @@ export const propertiesMock = [
       latitude: 40.73061,
       longitude: -73.935242,
     },
+    rentals: [],
   },
   {
     id: '43d8045c-62e5-4426-9f28-f1dde15b97c8',
@@ -38,6 +39,7 @@ export const propertiesMock = [
       latitude: 38.627003,
       longitude: -90.199402,
     },
+    rentals: [],
   },
   {
     id: '43d8045c-62e5-4426-9f28-f1dde15b97c9',
@@ -59,6 +61,7 @@ export const propertiesMock = [
       latitude: 32.715736,
       longitude: -117.161087,
     },
+    rentals: [],
   },
   {
     id: '43d8045c-62e5-4426-9f28-f1dde15b97c0',
@@ -81,6 +84,7 @@ export const propertiesMock = [
       latitude: 34.052235,
       longitude: -118.243683,
     },
+    rentals: [],
   },
   {
     id: '43d8045c-62e5-4426-9f28-f1dde15b97c1',
@@ -103,5 +107,6 @@ export const propertiesMock = [
       latitude: 37.774929,
       longitude: -122.419418,
     },
+    rentals: [],
   },
 ];
