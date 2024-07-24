@@ -10,7 +10,7 @@ export const DropDownMenu = (): JSX.Element => {
   };
 
   return (
-    <Container>
+    <Container data-testid="DropDownMenu">
       <Item onClick={handleTrips}>Trips</Item>
     </Container>
   );

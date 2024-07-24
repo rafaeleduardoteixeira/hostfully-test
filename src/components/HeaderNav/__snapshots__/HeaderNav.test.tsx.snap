@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderNav Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu cnSkOo"
+    data-testid="HeaderNavMenuClick"
+  >
+    <img
+      class="sc-gJhJTp cboMkP"
+      src="/icons/header-nav.svg"
+    />
+    <img
+      class="sc-elDIKY RUxgM"
+      src="https://www.rafaeleteixeira.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.a4caa42b.jpg&w=3840&q=75"
+    />
+  </div>
+</DocumentFragment>
+`;

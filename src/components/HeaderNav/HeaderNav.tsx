@@ -23,7 +23,7 @@ export const HeaderNav = (): JSX.Element => {
   }, []);
 
   return (
-    <Container onClick={() => handleOpen()} ref={menuRef}>
+    <Container data-testid="HeaderNavMenuClick" onClick={() => handleOpen()} ref={menuRef}>
       <HeaderNavIcon src="/icons/header-nav.svg" />
       <HeaderNavAvatar
         src={
