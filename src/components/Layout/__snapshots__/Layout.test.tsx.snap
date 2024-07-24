@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Snapshot test 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-iKTcqh evAMOK"
+  >
+    <img
+      alt="logo"
+      class="sc-gnpbhQ dFwobQ"
+      src="/icons/logo.svg"
+    />
+    <div
+      class="sc-braxZu cnSkOo"
+      data-testid="HeaderNavMenuClick"
+    >
+      <img
+        class="sc-gJhJTp cboMkP"
+        src="/icons/header-nav.svg"
+      />
+      <img
+        class="sc-elDIKY RUxgM"
+        src="https://www.rafaeleteixeira.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.a4caa42b.jpg&w=3840&q=75"
+      />
+    </div>
+  </header>
+</DocumentFragment>
+`;
