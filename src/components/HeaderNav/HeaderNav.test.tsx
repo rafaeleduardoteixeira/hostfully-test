@@ -15,6 +15,11 @@ describe('HeaderNav', () => {
     const { asFragment } = render(<HeaderNav />);
     expect(asFragment()).toMatchSnapshot();
   });
+  test('Should render HeaderNav', () => {
+    render(<HeaderNav />);
+    const HeaderNavElement = screen.getByTestId('HeaderNav');
+    expect(HeaderNavElement).toBeInTheDocument();
+  });
   test('Should click on HeaderNav and open DropDownMenu', () => {
     render(<HeaderNav />);
     const HeaderNavMenuClick = screen.getByTestId('HeaderNavMenuClick');
@@ -22,8 +27,8 @@ describe('HeaderNav', () => {
     act(() => {
       HeaderNavMenuClick.click();
     });
-    const DropDownMenu = screen.getByTestId('DropDownMenu');
-    expect(DropDownMenu).toBeInTheDocument();
+    const DropDownMenuElement = screen.getByTestId('DropDownMenu');
+    expect(DropDownMenuElement).toBeInTheDocument();
   });
 
   test('Should click outside HeaderNav and close DropDownMenu', () => {
