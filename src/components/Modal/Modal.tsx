@@ -9,7 +9,7 @@ interface ModalProps {
 
 export const Modal = ({ children, width, onClose }: ModalProps) => {
   return (
-    <Container>
+    <Container data-testid="Modal">
       <ModalContent width={width}>
         {onClose && <CloseButton onClick={onClose} />}
         {children}

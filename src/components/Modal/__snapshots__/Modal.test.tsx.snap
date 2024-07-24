@@ -4,6 +4,7 @@ exports[`Modal Snapshot test 1`] = `
 <DocumentFragment>
   <div
     class="sc-braxZu fTvrrx"
+    data-testid="Modal"
   >
     <div
       class="sc-gJhJTp kTJVVP"
