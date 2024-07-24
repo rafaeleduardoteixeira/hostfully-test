@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropDownMenu Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu bXpJGR"
+  >
+    <div
+      class="sc-gJhJTp jzzMNQ"
+    >
+      Trips
+    </div>
+  </div>
+</DocumentFragment>
+`;
