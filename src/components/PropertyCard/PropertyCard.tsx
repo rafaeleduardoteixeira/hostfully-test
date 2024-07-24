@@ -22,7 +22,7 @@ interface PropertyCardProps {
 
 export const PropertyCard = ({ onClick, card }: PropertyCardProps) => {
   return (
-    <PropertyCardContainer key={card.id} onClick={() => onClick(card.id)}>
+    <PropertyCardContainer data-testid="PropertyCard" key={card.id} onClick={() => onClick(card.id)}>
       <PropertyCardImg src={card.images[0]} alt={card.title} />
       <PropertyCardData>
         <PropertyLocation>{card.title}</PropertyLocation>

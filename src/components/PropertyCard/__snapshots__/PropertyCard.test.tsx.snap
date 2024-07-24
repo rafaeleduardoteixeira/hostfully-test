@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyCard Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu hKguhO"
+    data-testid="PropertyCard"
+  >
+    <img
+      alt="Title"
+      class="sc-gJhJTp gCpEdQ"
+      src="image"
+    />
+    <div
+      class="sc-elDIKY hNgXej"
+    >
+      <p
+        class="sc-fQpRED clrPiF"
+      >
+        Title
+      </p>
+      <h3
+        class="sc-dsLQwm cERdrA"
+      >
+        SubTitle
+      </h3>
+      <p
+        class="sc-iKTcqh iNJjTT"
+      >
+        Description
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
