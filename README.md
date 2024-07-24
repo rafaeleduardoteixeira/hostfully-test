@@ -49,6 +49,22 @@
 
 - Styled components: I selected the styled components to styling my test it's for me a good lib to make it, and what I'm more familiar with. It allows me to easily styling by state.
 
+## Map
+
+- Leaflet: I selected a free lib map only to looks like create my layout.
+
+## Unique Id
+
+- UUID only to generate id without backend.
+
+## Moment
+
+- To format and calculete dates.
+
+## React DatePicker
+
+- To generate a range calendar
+
 <br />
 
 ### Architecture Decisions
@@ -57,3 +73,4 @@
 - I created constants to emulate a backend data;
 - I created a global state to manage that mocks without backend. I choose Context API because it's enough for this project. It doesn't have a lot of complexity to create a complex state control;
 - I created a mock imagens to render on the app.
+- I named the tsx files as a FunctionalityName and the styles with FuncionalityName.Styles.ts, in that way I separate and keep it in an organized way to maintain it
