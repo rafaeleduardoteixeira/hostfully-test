@@ -21,7 +21,7 @@ export const Input = (props: InputProps) => {
   return (
     <Container>
       {props.label && <InputLabel htmlFor={props.name}>{props.label}</InputLabel>}
-      <InputField {...props} onChange={handleChange} />
+      <InputField data-testid="Input" {...props} onChange={handleChange} />
     </Container>
   );
 };
