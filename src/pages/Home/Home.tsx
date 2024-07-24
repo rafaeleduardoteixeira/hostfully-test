@@ -32,13 +32,13 @@ export const Home = (): JSX.Element => {
   };
 
   return (
-    <Container>
+    <Container data-testid="Home">
       <HomeBanner>
         <TitleBanner>Find Your Property to Rental</TitleBanner>
         <ImgBanner />
         <SearchContainer>
           <SearchInput onChange={handleChangeSearchTerm} />
-          <SearchButton onClick={() => handleSearch()}>
+          <SearchButton onClick={() => handleSearch()} data-testid="SearchButton">
             <SearchIcon src="/icons/search.svg" alt="search" title="Search an property" />
           </SearchButton>
         </SearchContainer>

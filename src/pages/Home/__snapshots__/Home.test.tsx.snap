@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu kWsybE"
+    data-testid="Home"
+  >
+    <div
+      class="sc-gJhJTp hvkuey"
+    >
+      <h1
+        class="sc-elDIKY jBsRBE"
+      >
+        Find Your Property to Rental
+      </h1>
+      <div
+        class="sc-fQpRED gIEbba"
+      />
+      <div
+        class="sc-dsLQwm icBkyY"
+      >
+        <div
+          class="sc-hfvVTD gMNIZl"
+          data-testid="SearchInput"
+        >
+          <input
+            class="sc-ifyrTC hnIWaB"
+            placeholder="Enter a property name or city"
+          />
+        </div>
+        <button
+          class="sc-iKTcqh bWQgxY"
+          data-testid="SearchButton"
+        >
+          <img
+            alt="search"
+            class="sc-gnpbhQ iceGBX"
+            src="/icons/search.svg"
+            title="Search an property"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-la-DxNn gCDkMC"
+      data-testid="PropertyList"
+    >
+      <h1
+        class="sc-iCZwEW ifeOmH"
+      >
+        Properties For Rent
+      </h1>
+      <div
+        class="sc-knesRu fjeQcU"
+      />
+      <div
+        class="sc-dnaUSb cXawOW"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
