@@ -23,7 +23,7 @@ describe('InputDateRange', () => {
 
   test('Should select a date', () => {
     const onChange = jest.fn();
-    render(
+    const { container } = render(
       <InputDateRange
         onChange={onChange}
         dateStart={undefined}
@@ -33,7 +33,10 @@ describe('InputDateRange', () => {
     );
     const InputDateRangeElement = screen.getByPlaceholderText('Select a date to book');
     act(() => {
-      fireEvent.change(InputDateRangeElement, { target: { value: new Date() } });
+      InputDateRangeElement.focus();
+    });
+    act(() => {
+      fireEvent.click(container.getElementsByClassName('react-datepicker__day--today')[0]);
     });
     expect(onChange).toHaveBeenCalled();
   });
