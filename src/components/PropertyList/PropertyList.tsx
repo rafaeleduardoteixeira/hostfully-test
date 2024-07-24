@@ -6,6 +6,7 @@ import { Container, Delimiter, PropertyListTitle, PropertyCardContainer } from '
 import { Property } from '../../interfaces/property';
 import { PropertyCardSkeleton } from '../PropertyCardSkeleton/PropertyCardSkeleton';
 import { PropertyCard } from '../PropertyCard/PropertyCard';
+import { useNavigate } from 'react-router-dom';
 
 interface PropertyListProps {
   isLoading: boolean;
@@ -13,6 +14,12 @@ interface PropertyListProps {
 }
 
 export const PropertyList = ({ isLoading, properties }: PropertyListProps): JSX.Element => {
+  // This function is responsible to navigate to the property detail page. I created this in a generic way to use PropertyCard more times.
+  const navigate = useNavigate();
+  const handleCardClick = (id: string) => {
+    navigate(`/property/${id}`);
+  };
+
   return (
     <Container>
       <PropertyListTitle>Properties For Rent</PropertyListTitle>
@@ -26,7 +33,19 @@ export const PropertyList = ({ isLoading, properties }: PropertyListProps): JSX.
             <PropertyCardSkeleton />
           </>
         ) : (
-          properties?.map((property) => <PropertyCard key={property.id} property={property} />)
+          properties?.map((property) => (
+            <PropertyCard
+              key={property.id}
+              card={{
+                id: property.id,
+                images: property.images,
+                title: `${property.city}, ${property.country}`,
+                subTitle: property.name,
+                description: `$${property.price.toString()}`,
+              }}
+              onClick={handleCardClick}
+            />
+          ))
         )}
       </PropertyCardContainer>
     </Container>
