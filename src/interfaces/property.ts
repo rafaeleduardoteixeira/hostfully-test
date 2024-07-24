@@ -11,9 +11,4 @@ export interface Property {
     latitude: number;
     longitude: number;
   };
-  rentals?: {
-    user: string;
-    startDate: string;
-    endDate: string;
-  }[];
 }
