@@ -12,7 +12,7 @@ export const SearchInput = ({ value, onChange }: SearchInputProps) => {
   };
 
   return (
-    <Container>
+    <Container data-testid="SearchInput">
       <SearchInputField value={value} onChange={handleChange} placeholder="Enter a property name or city" />
     </Container>
   );
