@@ -21,7 +21,7 @@ export const PropertyMap = ({ property }: PropertyMapProps) => {
   const position: [number, number] = [property?.position.latitude || 0, property?.position.longitude || 0];
 
   return (
-    <PropertyMapContainer>
+    <PropertyMapContainer data-testid="PropertyMap">
       <MapContainer center={position} zoom={13} scrollWheelZoom={false} className="MapStyles">
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
