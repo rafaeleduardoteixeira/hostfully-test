@@ -1,10 +1,27 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Home from '../pages/Home/Home';
+import { Layout } from '../components/Layout/Layout';
+import { PropertyDetail } from '../components/PropertyDetail/PropertyDetail';
+import { Home } from '../pages/Home/Home';
+import { Trips } from '../pages/Trips/Trips';
 
 const createdRoutes = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/property/:id',
+        element: <PropertyDetail />,
+      },
+      {
+        path: '/my-trips',
+        element: <Trips />,
+      },
+    ],
   },
 ]);
 
