@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyDescription Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu dAccIH"
+    data-testid="PropertyDescription"
+  >
+    <h2
+      class="sc-gJhJTp dMqlJz"
+    >
+      Description
+    </h2>
+    <div
+      class="sc-elDIKY keOpyt"
+    />
+    <p
+      class="sc-fQpRED hHDnMH"
+    >
+      Description 1
+    </p>
+  </div>
+</DocumentFragment>
+`;
