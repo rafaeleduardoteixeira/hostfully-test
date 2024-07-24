@@ -2,7 +2,6 @@ import React, { act } from 'react';
 import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { InputDateRange } from './InputDateRange';
-import { Input } from '../Input/Input';
 
 describe('InputDateRange', () => {
   test('Snapshot test', () => {
