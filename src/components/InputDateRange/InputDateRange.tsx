@@ -30,7 +30,6 @@ export const InputDateRange = ({ bookedDates, dateStart, dateEnd, error, onChang
       onChange(value);
       return;
     }
-    onChange(null);
   };
 
   return (
