@@ -4,7 +4,7 @@ import { Skeleton } from '../Skeleton/Skeleton';
 
 export const PropertyCardSkeleton = () => {
   return (
-    <Container>
+    <Container data-testid="PropertyCardSkeleton">
       <PropertyCardImgSkeleton>
         <Skeleton />
       </PropertyCardImgSkeleton>

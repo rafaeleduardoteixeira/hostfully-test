@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyCardSkeleton Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu gblkLp"
+    data-testid="PropertyCardSkeleton"
+  >
+    <div
+      class="sc-gJhJTp hEybUI"
+    >
+      <div
+        class="sc-fQpRED eKGiQ"
+      />
+    </div>
+    <div
+      class="sc-elDIKY biXTKv"
+    >
+      <div
+        class="sc-fQpRED eKGiQ"
+      />
+      <div
+        class="sc-fQpRED leCQl"
+        width="80%"
+      />
+      <div
+        class="sc-fQpRED gBrIUN"
+        width="40%"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
