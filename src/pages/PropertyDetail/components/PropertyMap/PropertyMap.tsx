@@ -1,4 +1,5 @@
 // Only to emulate the map to compose the layout
+import React from 'react';
 import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';

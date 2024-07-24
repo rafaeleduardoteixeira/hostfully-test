@@ -1,4 +1,4 @@
-import { ChangeEvent, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Input } from '../../../../components/Input/Input';
 import { RentedProperties } from '../../../../interfaces/rentedProperties';
 import { colors } from '../../../../themes';

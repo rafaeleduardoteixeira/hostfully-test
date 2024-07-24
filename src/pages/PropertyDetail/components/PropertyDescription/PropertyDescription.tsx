@@ -1,3 +1,4 @@
+import React from 'react';
 import { Property } from '../../../../interfaces/property';
 import {
   LineBottom,

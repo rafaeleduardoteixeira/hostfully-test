@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Property } from '../../../../interfaces/property';
 import {
   PropertyBookNowButton,
@@ -9,12 +9,12 @@ import {
   PropertyBookNowSuccessMessage,
   PropertyBookNowSuccessButton,
 } from './PropertyBookNow.styles';
-import { Input } from '../../../Input/Input';
+import { Input } from '../../../../components/Input/Input';
 import { AppContext, AppContextType } from '../../../../Context/App.context';
-import { Skeleton } from '../../../Skeleton/Skeleton';
+import { Skeleton } from '../../../../components/Skeleton/Skeleton';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import { InputDateRange } from '../../../InputDateRange/InputDateRange';
+import { InputDateRange } from '../../../../components/InputDateRange/InputDateRange';
 import moment from 'moment';
 
 interface PropertyBookNowProps {
