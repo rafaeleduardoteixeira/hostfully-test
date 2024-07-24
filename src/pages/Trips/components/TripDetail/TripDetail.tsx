@@ -42,7 +42,7 @@ export const TripDetail = ({ handleEditTrip, handleDeleteTrip, handleCancel, ren
   };
 
   const handleChange = (value: Date[] | null) => {
-    if (value) {
+    if (value && value[0] && value[1]) {
       if (handleCheckRentedDates(value[0], value[1])) {
         setCheckIn(null);
         setCheckOut(null);
@@ -76,7 +76,7 @@ export const TripDetail = ({ handleEditTrip, handleDeleteTrip, handleCancel, ren
   };
 
   return (
-    <Container>
+    <Container data-testid="TripDetail">
       <TripDetailTitle>Trip Detail</TripDetailTitle>
       <Input label="Name" value={rentedProperty.name} disabled={true} />
       <Input label="Property" value={rentedProperty.propertyName} disabled={true} />

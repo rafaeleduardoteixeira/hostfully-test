@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TripDetail Snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-fQpRED ibyllv"
+    data-testid="TripDetail"
+  >
+    <h1
+      class="sc-dsLQwm emstNv"
+    >
+      Trip Detail
+    </h1>
+    <div
+      class="sc-braxZu jqDACe"
+    >
+      <label
+        class="sc-gJhJTp MduwH"
+      >
+        Name
+      </label>
+      <input
+        class="sc-elDIKY hDaMyU"
+        data-testid="Input"
+        disabled=""
+        label="Name"
+        value="Name 1"
+      />
+    </div>
+    <div
+      class="sc-braxZu jqDACe"
+    >
+      <label
+        class="sc-gJhJTp MduwH"
+      >
+        Property
+      </label>
+      <input
+        class="sc-elDIKY hDaMyU"
+        data-testid="Input"
+        disabled=""
+        label="Property"
+        value="Property 1"
+      />
+    </div>
+    <div
+      class="sc-iKTcqh cebKEX"
+    >
+      <div
+        class="sc-iCZwEW gtdYpf"
+        error=""
+      >
+        <div
+          class="react-datepicker-wrapper"
+        >
+          <div
+            class="react-datepicker__input-container react-datepicker__view-calendar-icon"
+          >
+            <img
+              alt="calendar"
+              class=" react-datepicker__calendar-icon "
+              src="/icons/calendar.svg"
+            />
+            <input
+              class="date-picker"
+              placeholder="Select a date to book"
+              type="text"
+              value="July 24, 2024 - July 24, 2024"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gnpbhQ esMGKT"
+    >
+      <button
+        class="sc-la-DxNn iSrhNw"
+        color="white"
+      >
+        Edit
+      </button>
+    </div>
+    <div
+      class="sc-gnpbhQ esMGKT"
+    >
+      <button
+        class="sc-la-DxNn hTaAUK"
+        color="white"
+      >
+        Delete
+      </button>
+      <button
+        class="sc-la-DxNn gnKfZG"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
