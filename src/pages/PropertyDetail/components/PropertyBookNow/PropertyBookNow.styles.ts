@@ -13,6 +13,10 @@ export const PropertyBookNowContainer = styled.div`
   border: 1px solid rgb(221, 221, 221);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 
+  @media ${media.tablet} {
+    width: 40%;
+  }
+
   @media ${media.mobile} {
     width: 100%;
   }
@@ -69,6 +73,36 @@ export const PropertyBookNowFields = styled.div`
   justify-content: space-between;
   width: 90%;
   gap: 15px;
+
+  @media ${media.notebook} {
+    input {
+      width: 250px;
+    }
+    .date-picker {
+      width: 240px;
+    }
+  }
+
+  @media ${media.tablet} {
+    input {
+      width: 300px;
+    }
+    .date-picker {
+      width: 290px;
+    }
+  }
+
+  @media ${media.mobile} {
+    > div {
+      width: 260px;
+    }
+    input {
+      width: 250px;
+    }
+    .date-picker {
+      width: 240px;
+    }
+  }
 `;
 
 export const PropertyBookNowSuccessContainer = styled.div`

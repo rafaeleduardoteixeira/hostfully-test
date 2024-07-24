@@ -12,6 +12,10 @@ export const PropertyMapContainer = styled.div`
     z-index: 1;
   }
 
+  @media ${media.tablet} {
+    width: 60%;
+  }
+
   @media ${media.mobile} {
     width: 100%;
   }
